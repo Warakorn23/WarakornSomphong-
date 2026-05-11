@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Warakorn Somphong Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:'Poppins', sans-serif;
+    }
+
+    body{
+        background:#f4f6fb;
+        color:#333;
+    }
+
+    /* HERO */
+    .hero{
+        background:#1e3a8a;
+        color:#fff;
+        text-align:center;
+        padding:80px 20px;
+    }
+
+    .hero img{
+        width:150px;
+        height:150px;
+        border-radius:50%;
+        object-fit:cover;
+        border:5px solid #fff;
+        margin-bottom:15px;
+    }
+
+    .hero h1{
+        font-size:2.3rem;
+        margin-bottom:5px;
+    }
+
+    .hero p{
+        opacity:0.9;
+    }
+
+    /* SECTION */
+    section{
+        max-width:900px;
+        margin:auto;
+        padding:60px 20px;
+    }
+
+    h2{
+        color:#1e3a8a;
+        margin-bottom:20px;
+    }
+
+    /* ABOUT */
+    .about p{
+        margin-bottom:12px;
+        color:#555;
+    }
+
+    /* PROJECT TOGGLE (CSS ONLY) */
+    .project{
+        margin-bottom:12px;
+        border:1px solid #ddd;
+        border-radius:10px;
+        overflow:hidden;
+        background:#fff;
+    }
+
+    .project input{
+        display:none;
+    }
+
+    .project label{
+        display:block;
+        padding:15px;
+        background:#e5e7eb;
+        cursor:pointer;
+        font-weight:500;
+    }
+
+    .content{
+        max-height:0;
+        overflow:hidden;
+        transition:0.4s ease;
+        padding:0 15px;
+    }
+
+    .project input:checked ~ .content{
+        max-height:400px;
+        padding:15px;
+    }
+
+    .content img{
+        width:100%;
+        border-radius:8px;
+        margin-bottom:10px;
+    }
+
+    /* SKILLS */
+    .skill{
+        margin-bottom:15px;
+    }
+
+    .bar{
+        background:#e5e7eb;
+        height:10px;
+        border-radius:20px;
+        overflow:hidden;
+    }
+
+    .fill{
+        height:100%;
+        background:#1e3a8a;
+    }
+
+    /* CONTACT */
+    .contact a{
+        display:block;
+        color:#1e3a8a;
+        text-decoration:none;
+        margin-bottom:8px;
+    }
+
+    .contact a:hover{
+        text-decoration:underline;
+    }
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+    <img src="MEITU_20260126_161059272.jpg" alt="Profile">
+    <h1>Warakorn Somphong</h1>
+    <p>Marketing student passionate about brand storytelling</p>
+    <p style="margin-top:8px;">Student ID: 6650100951 | Logistics Management</p>
+</div>
+
+<!-- ABOUT -->
+<section class="about">
+    <h2>About Me</h2>
+    <p>นักศึกษาด้านการจัดการโลจิสติกส์ที่สนใจด้านการตลาดและการสร้างแบรนด์ โดยเฉพาะการเล่าเรื่องผ่านกลยุทธ์ทางธุรกิจ</p>
+    <p>มีความสนใจในการวิเคราะห์ข้อมูลเพื่อใช้ตัดสินใจในงานด้านธุรกิจและการขนส่ง</p>
+    <p>ตั้งใจพัฒนาทักษะด้านดิจิทัลและการทำงานร่วมกับองค์กรในอนาคต</p>
+</section>
+
+<!-- PROJECTS -->
+<section>
+    <h2>Projects</h2>
+
+    <div class="project">
+        <input type="checkbox" id="p1">
+        <label for="p1">Brand Analysis Project</label>
+        <div class="content">
+            <img src="https://via.placeholder.com/800x400">
+            <p>วิเคราะห์กลยุทธ์แบรนด์และพฤติกรรมผู้บริโภคเพื่อหาข้อมูลเชิงลึกทางการตลาด</p>
+        </div>
+    </div>
+
+    <div class="project">
+        <input type="checkbox" id="p2">
+        <label for="p2">Logistics Optimization</label>
+        <div class="content">
+            <img src="https://via.placeholder.com/800x400">
+            <p>ออกแบบกระบวนการโลจิสติกส์เพื่อลดต้นทุนและเพิ่มประสิทธิภาพการขนส่ง</p>
+        </div>
+    </div>
+
+    <div class="project">
+        <input type="checkbox" id="p3">
+        <label for="p3">Digital Campaign</label>
+        <div class="content">
+            <img src="https://via.placeholder.com/800x400">
+            <p>สร้างแคมเปญการตลาดออนไลน์เพื่อเพิ่มการเข้าถึงและการรับรู้แบรนด์</p>
+        </div>
+    </div>
+
+</section>
+
+<!-- SKILLS -->
+<section>
+    <h2>Skills</h2>
+
+    <div class="skill">
+        <p>Marketing</p>
+        <div class="bar"><div class="fill" style="width:85%"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>Data Analysis</p>
+        <div class="bar"><div class="fill" style="width:75%"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>Logistics</p>
+        <div class="bar"><div class="fill" style="width:80%"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>Communication</p>
+        <div class="bar"><div class="fill" style="width:90%"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>Excel</p>
+        <div class="bar"><div class="fill" style="width:88%"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>Creativity</p>
+        <div class="bar"><div class="fill" style="width:92%"></div></div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+    <h2>Contact</h2>
+    <a href="mailto:warakorn@example.com">Email: warakorn@example.com</a>
+    <a href="#">LinkedIn: Warakorn Somphong</a>
+    <a href="#">Instagram: @warakorn</a>
+</section>
+
+</body>
+</html>
